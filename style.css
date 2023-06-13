@@ -1,0 +1,26 @@
+.star {
+    position: absolute;
+    background: radial-gradient(rgba(255, 255, 255, 0.8), transparent);
+    border-radius: 50%;
+}
+
+.cross {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    transform: rotate(45deg);
+    animation: blinking 2s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
